@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Project from "../components/project"
+import Project from "../components/Project"
 import { jobs, hardSkills, softSkills } from "../data/data"
 import avatar from "../images/seth.jpg"
 import omh from "../images/omh.png"
