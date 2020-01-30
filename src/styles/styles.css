@@ -1,0 +1,278 @@
+$body-bg: #2b88c2;
+$body-color: #091d29;
+$white: #fff;
+$gray: #999;
+$lightGray: #dde1ed;
+
+@mixin box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+// Reset
+body {
+  font-size: 18px;
+}
+
+:--heading {
+  margin-bottom: 5px;
+}
+
+h6 {
+  font-size: 0.71225rem;
+}
+
+p {
+  margin: 10px 0 0 0;
+}
+
+main {
+  background-color: $body-bg;
+  padding-top: 30px;
+  color: $body-color;
+}
+
+.btn {
+  padding: 6px 10px;
+  background-color: $gray;
+  border-radius: 30px;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 30px 60px;
+  grid-template-areas:
+    "photo"
+    "name"
+    "about"
+    "work"
+    "skills"
+    "education"
+    "projects";
+
+  background-color: $white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  @include box-shadow;
+
+  @media (min-width: 960px) {
+    width: 80%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "name photo"
+      "about about"
+      "work work"
+      "skills skills"
+      "education education"
+      "projects projects";
+  }
+
+  @media (min-width: 1200px) {
+    width: 60%;
+    grid-template-areas:
+      "name photo"
+      "work about"
+      "skills skills"
+      "projects education";
+  }
+
+  .header {
+    color: $gray;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    padding: 15px 0;
+    text-transform: uppercase;
+  }
+
+  .company,
+  .school-name {
+    color: $body-bg;
+
+    span {
+      color: $gray;
+    }
+  }
+}
+
+.name {
+  text-align: center;
+  grid-area: name;
+
+  .title {
+    color: $body-bg;
+  }
+
+  @media (min-width: 768px) {
+    text-align-last: left;
+  }
+}
+
+.photo {
+  grid-area: photo;
+  text-align: center;
+
+  img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0;
+  }
+}
+
+.about {
+  grid-area: about;
+}
+
+.work {
+  grid-area: work;
+
+  .job {
+    &:first-of-type {
+      margin-bottom: 30px;
+    }
+
+    .job-title {
+      margin: 10px 0;
+    }
+
+    .job-skills {
+      margin-top: 30px;
+    }
+  }
+}
+
+.education {
+  grid-area: education;
+
+  .school {
+    margin-bottom: 30px;
+  }
+}
+
+.projects {
+  grid-area: projects;
+
+  .project-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    .project-card {
+      width: 47%;
+      background-color: $white;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      @include box-shadow;
+      border: 1px solid $lightGray;
+      transition: all 0.2s ease-in-out;
+
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      img {
+        margin: 0;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .project-card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        margin-top: -8px;
+        text-align: center;
+        border-top: 2px solid $body-color;
+
+        .project-card-title {
+          margin-top: 20px;
+        }
+
+        .project-card-meta {
+          font-size: 16px;
+          padding: 10px;
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .project-card-footer {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          background-color: $lightGray;
+          border-radius: 0 0 10px 10px;
+
+          a {
+            text-decoration: none;
+          }
+
+          .site a {
+            padding: 12px 29px;
+          }
+
+          .source a {
+            padding: 12px 18px;
+          }
+
+          .site,
+          .source {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.skills {
+  grid-area: skills;
+
+  .skills-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .skills-wrapper {
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+
+      .title {
+        margin: 10px 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
+
+footer {
+  background-color: $body-bg;
+  text-align: center;
+  padding: 20px;
+
+  a {
+    color: $body-color;
+    border-bottom: 1px dotted $body-color;
+
+    &:hover {
+      border-bottom: 1px solid $body-color;
+      text-decoration: none;
+    }
+  }
+}
