@@ -35,7 +35,7 @@ export const hardSkills = [
 ]
 
 export const softSkills = [
-  "remote working - I am skilled in communicating across multiple time zones with multiple types of positions and personalities. In a remote environment where no one is looking over my shoulder I am great at time management and meeting deadlines.",
+  "remote working - I am skilled in communicating across multiple time zones with multiple types of positions and personalities. In an autonomous environment I am great at time management and meeting deadlines.",
   "honest and thoughtful communication",
   "excellent written and verbal communication skills",
   "listening and validating others",
