@@ -49,7 +49,7 @@ const IndexPage = () => (
           >
             Short Films
           </a>
-          , <br /> or say{" "}
+          , or say{" "}
           <a
             href="mailto:sethburtonhall@gmail.com?Subject=Hello"
             target="_top"
