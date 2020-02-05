@@ -86,13 +86,19 @@ const IndexPage = () => (
           <h4 className="degree">BA - Mass Communications</h4>
           <h5 className="school-name">
             North Carolina State University
-            <span> 1995-1998</span>
+            <span> | 1995-1998</span>
           </h5>
         </div>
         <div className="school">
           <h4 className="degree">MFA - Creative Producing - School of Film</h4>
           <h5 className="school-name">
-            UNCSA <span> 2016-2018</span>
+            UNCSA<span> | 2016-2018</span>
+          </h5>
+        </div>
+        <div className="school">
+          <h4 className="degree">Certified ScrumMaster®</h4>
+          <h5 className="school-name">
+            Scrum Alliance<span> | 2019</span>
           </h5>
         </div>
       </section>
