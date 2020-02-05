@@ -20,7 +20,7 @@ const IndexPage = () => (
       </section>
 
       <section className="photo">
-        <img src={avatar} alt="Seth Hall Avatar" />
+        <img src={avatar} />
       </section>
 
       <section className="about">
