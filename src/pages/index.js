@@ -27,11 +27,11 @@ const IndexPage = () => (
         <h6 className="header">About Me</h6>
         <p>
           A self-taught developer with 9 years of experience working in web
-          development and front end. A life-long creative with a portfolio
-          containing a variety of film, video, music and web projects. Possesses
-          a strong passion and dedication to creative craft and vocation.
-          Capable of collaboration across a variety of skill sets and
-          personalities with a proven ability to lead and mentor. Check out my{" "}
+          development and front end. Capable of collaboration across a variety
+          of skill sets and personalities with a proven ability to lead and
+          mentor. A life-long creative with a portfolio containing a variety of
+          web, film, video, and music projects. Possesses a strong passion and
+          dedication to creative craft and vocation. Check out my{" "}
           <a
             href="https://www.instagram.com/sethburtonhall/"
             target="_blank"
