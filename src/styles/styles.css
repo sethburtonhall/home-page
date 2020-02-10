@@ -64,16 +64,17 @@ main {
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
       "name photo"
-      "about education"
+      "about about"
       "work work"
       "skills skills"
+      "education education"
       "projects projects";
   }
 
   @media (min-width: 1200px) {
     grid-template-areas:
       "name photo"
-      "work about"
+      "about work"
       "skills education"
       "projects projects";
   }

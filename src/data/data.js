@@ -1,14 +1,14 @@
 export const jobs = [
   {
-    title: "Front End Developer",
+    title: "Front-End Developer",
     company: "Ushahidi",
     description:
-      "Ushahidi is a Nairobi, Kenya based technology company that designs products and initiatives that strive to solve global problems. As part of the design team I was responsible for all front end code across multiple software products and websites.",
+      "Ushahidi is a Nairobi, Kenya based technology company that designs products and initiatives that strive to solve global problems. As part of the design team I was responsible for all front-end code across multiple software products and websites.",
     date: "May 2013-October 2018",
     location: "Remote",
   },
   {
-    title: "Front End Developer",
+    title: "Front-End Developer",
     company: "Self-Employed",
     description:
       "As a freelance web developer I have partnered with creative agencies and individuals on a variety of web projects ranging from custom builds to content management systems.",
@@ -21,7 +21,7 @@ export const hardSkills = [
   "React.js",
   "styled components",
   "HTML/CSS/Sass/JS",
-  "front end build tools (Grunt & Gulp)",
+  "front-end build tools (Grunt & Gulp)",
   "package managers (NPM, Yarn)",
   "html templating (Handlebars, Twig, etc...)",
   "git version control (Github)",
