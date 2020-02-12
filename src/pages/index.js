@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Project from "../components/Project"
-import { jobs, hardSkills, softSkills } from "../data/data"
+import { jobs, hardSkills, softSkills, projects } from "../data/data"
 import avatar from "../images/seth.jpg"
 import omh from "../images/omh.png"
 import pokemon from "../images/pokemon.png"
@@ -139,79 +139,17 @@ const IndexPage = () => (
       <section className="projects">
         <h6 className="header">Projects</h6>
         <div className="project-items">
-          <Project
-            title="Old Mother Hubbard"
-            src={omh}
-            meta={
-              <p>
-                HTML/CSS/Sass <br />
-                Responsive Design <br />
-                Foundation Framework{" "}
-              </p>
-            }
-            url="https://www.oldmotherhubbard.com/"
-            srcUrl="https://github.com/sethburtonhall/old-mother-hubbard"
-          />
-          <Project
-            title="PokeGame"
-            src={pokemon}
-            meta={
-              <p>
-                React.js <br />
-                PokeAPI <br />
-              </p>
-            }
-            app={true}
-            url="https://pokegame-sbh.netlify.com"
-            srcUrl="https://github.com/sethburtonhall/react-pokedex"
-          />
-          <Project
-            title="Ushahidi"
-            src={ushdotcom}
-            meta={
-              <p>
-                Craft CMS <br />
-                Twig <br />
-                HTML/CSS/Sass{" "}
-              </p>
-            }
-            url="https://www.ushahidi.com/"
-          />
-          <Project
-            title="Movie Search"
-            src={tmdb}
-            meta={
-              <p>
-                React.js <br />
-                TMDB API <br />
-                Styled Components
-              </p>
-            }
-            app={true}
-            url="https://react-tmdb-sbh.netlify.com/"
-            srcUrl="https://github.com/sethburtonhall/react-movie"
-          />
-          <Project
-            title="Hall Pictures"
-            src={hallpictures}
-            meta={<p>Gatsby.js</p>}
-            url="https://www.hallpictures.us/"
-            srcUrl="https://github.com/sethburtonhall/hall-pictures"
-          />
-          <Project
-            title="Ushahidi Platform"
-            src={ushahidi}
-            meta={
-              <p>
-                HTML/CSS/Sass <br />
-                Custom Components <br />
-                Responsive Design <br />
-                Handlebars.js
-              </p>
-            }
-            url="http://preview.ushahidi.com/platform-pattern-library/master/"
-            srcUrl="https://github.com/ushahidi/platform-pattern-library"
-          />
+          {projects.map((project, i) => (
+            <Project
+              key={i}
+              src={project.src}
+              title={project.title}
+              meta={project.meta}
+              app={project.app}
+              url={project.url}
+              srcUrl={project.srcUrl}
+            />
+          ))}
         </div>
       </section>
     </article>

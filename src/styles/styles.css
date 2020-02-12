@@ -200,7 +200,7 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 200px;
+        height: 230px;
         margin-top: -8px;
         text-align: center;
         border-top: 1px solid $body-bg;

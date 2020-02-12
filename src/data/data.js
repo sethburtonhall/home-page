@@ -1,3 +1,10 @@
+import omh from "../images/omh.png"
+import pokemon from "../images/pokemon.png"
+import hallpictures from "../images/hall-pictures.jpg"
+import tmdb from "../images/tmdb.png"
+import ushahidi from "../images/ushahidi.png"
+import ushdotcom from "../images/ushahidi-dotcom.png"
+
 export const jobs = [
   {
     title: "Front-End Developer",
@@ -44,4 +51,80 @@ export const softSkills = [
   "friendly and laid back demeanor",
   "a sense of humor",
   "a deep understanding of the development process and the efficiency needed to see it through from start to finish",
+]
+
+export const projects = [
+  {
+    src: ushahidi,
+    title: "Ushahidi Platform",
+    meta: [
+      "Custom HTML/CSS/JS",
+      "Responsive Design",
+      "RTL support",
+      "Handlebars.js",
+    ],
+    app: false,
+    url: "http://preview.ushahidi.com/platform-pattern-library/master/",
+    srcUrl: "https://github.com/ushahidi/platform-pattern-library",
+  },
+  {
+    src: tmdb,
+    title: "Movie Search",
+    meta: [
+      "React.js",
+      "TMDB API",
+      "Custom Hooks",
+      "Styled Components"
+    ],
+    app: true,
+    url: "https://react-tmdb-sbh.netlify.com/",
+    srcUrl: "https://github.com/sethburtonhall/react-movie",
+  },
+  {
+    src: omh,
+    title: "Old Mother Hubbard",
+    meta: [
+      "HTML/CSS",
+      "Responsive Design",
+      "Foundation Framework"
+    ],
+    app: false,
+    url: "https://www.oldmotherhubbard.com/",
+    srcUrl: "https://github.com/sethburtonhall/old-mother-hubbard",
+  },
+  {
+    src: ushdotcom,
+    title: "Ushahidi",
+    meta: [
+      "Craft CMS",
+      "Twig Templating",
+      "HTML/CSS/JS"
+    ],
+    app: false,
+    url: "https://www.ushahidi.com/",
+    srcUrl: null,
+  },
+  {
+    src: hallpictures,
+    title: "Hall Pictures",
+    meta: [
+      "Gatsby.js",
+      "React.js",
+      "GraphQL"
+    ],
+    app: false,
+    url: "https://www.hallpictures.us/",
+    srcUrl: "https://github.com/sethburtonhall/hall-pictures",
+  },
+  {
+    src: pokemon,
+    title: "PokeGame",
+    meta: [
+      "React.js",
+      "PokeAPI"
+    ],
+    app: true,
+    url: "https://pokegame-sbh.netlify.com",
+    srcUrl: "https://github.com/sethburtonhall/react-pokedex",
+  },
 ]
