@@ -25,10 +25,10 @@ export const jobs = [
 ]
 
 export const hardSkills = [
+  "HTML/CSS/Sass/JS",
   "React.js",
   "styled components",
-  "HTML/CSS/Sass/JS",
-  "front-end build tools (Grunt & Gulp)",
+  "front-end build tools (Grunt, Gulp)",
   "package managers (NPM, Yarn)",
   "html templating (Handlebars, Twig, etc...)",
   "git version control (Github)",
@@ -37,7 +37,7 @@ export const hardSkills = [
   "terminal/command line",
   "cross browser/cross device development",
   "CSS frameworks (Material UI, Bootstrap, Foundation, etc...)",
-  "Static site generators",
+  "Static site generators (Gatsby.js, Jekyll, etc...)",
   "content management systems (Craft CMS, Wordpress, etc...)",
 ]
 
