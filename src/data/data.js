@@ -63,19 +63,14 @@ export const projects = [
       "RTL support",
       "Handlebars.js",
     ],
-    app: false,
-    url: "http://preview.ushahidi.com/platform-pattern-library/master/",
+    app: true,
+    url: "https://uchaguzi.or.ke/views/map",
     srcUrl: "https://github.com/ushahidi/platform-pattern-library",
   },
   {
     src: tmdb,
     title: "Movie Search",
-    meta: [
-      "React.js",
-      "TMDB API",
-      "Custom Hooks",
-      "Styled Components"
-    ],
+    meta: ["React.js", "TMDB API", "Custom Hooks", "Styled Components"],
     app: true,
     url: "https://react-tmdb-sbh.netlify.com/",
     srcUrl: "https://github.com/sethburtonhall/react-movie",
@@ -83,23 +78,15 @@ export const projects = [
   {
     src: omh,
     title: "Old Mother Hubbard",
-    meta: [
-      "HTML/CSS",
-      "Responsive Design",
-      "Foundation Framework"
-    ],
+    meta: ["HTML/CSS", "Responsive Design", "Foundation Framework"],
     app: false,
     url: "https://www.oldmotherhubbard.com/",
     srcUrl: "https://github.com/sethburtonhall/old-mother-hubbard",
   },
   {
     src: ushdotcom,
-    title: "Ushahidi",
-    meta: [
-      "Craft CMS",
-      "Twig Templating",
-      "HTML/CSS/JS"
-    ],
+    title: "Ushahidi.com",
+    meta: ["Craft CMS", "Twig Templating", "HTML/CSS/JS"],
     app: false,
     url: "https://www.ushahidi.com/",
     srcUrl: null,
@@ -107,11 +94,7 @@ export const projects = [
   {
     src: hallpictures,
     title: "Hall Pictures",
-    meta: [
-      "Gatsby.js",
-      "React.js",
-      "GraphQL"
-    ],
+    meta: ["Gatsby.js", "React.js", "GraphQL"],
     app: false,
     url: "https://www.hallpictures.us/",
     srcUrl: "https://github.com/sethburtonhall/hall-pictures",
@@ -119,10 +102,7 @@ export const projects = [
   {
     src: pokemon,
     title: "PokeGame",
-    meta: [
-      "React.js",
-      "PokeAPI"
-    ],
+    meta: ["React.js", "PokeAPI"],
     app: true,
     url: "https://pokegame-sbh.netlify.com",
     srcUrl: "https://github.com/sethburtonhall/react-pokedex",
