@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Project from "../components/Project"
-import { jobs, hardSkills, softSkills, projects } from "../data/data"
+import { frontend, jobs, hardSkills, softSkills, projects } from "../data/data"
 import avatar from "../images/seth.jpg"
 import omh from "../images/omh.png"
 import pokemon from "../images/pokemon.png"
@@ -16,7 +16,9 @@ const IndexPage = () => (
     <article className="resume">
       <section className="name">
         <h1>Seth Hall</h1>
-        <h2 className="title">Front-End Developer</h2>
+        <h2 className="title">
+          <a href="https://github.com/sethburtonhall">{frontend} Developer</a>
+        </h2>
       </section>
 
       <section className="photo">
@@ -26,14 +28,14 @@ const IndexPage = () => (
       <section className="about">
         <h6 className="header">About Me</h6>
         <p>
-          I am a Front-End Developer living in the great state of North
+          I am a {frontend} Developer living in the great state of North
           Carolina. With 9 years of related work experience, I am capable of
           collaboration across a variety of skill sets and personalities. I work
           from home in an office that I built, with the help of family and
           friends, and it is the perfect environment to learn, create, and ship.
           Every morning when I walk into my office, I am reminded of how blessed
           I am to love my work. I am most passionate about and interested in
-          Front-End Development, but each day I gain more knowledge in
+          {frontend} Development, but each day I gain more knowledge in
           full-stack technologies. Thanks to my tenacity, the web community, and
           the internet, I have taught myself design and development. If we work
           together and I don't know something, I will say so and then I will

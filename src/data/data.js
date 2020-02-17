@@ -5,41 +5,44 @@ import tmdb from "../images/tmdb.png"
 import ushahidi from "../images/ushahidi.png"
 import ushdotcom from "../images/ushahidi-dotcom.png"
 
+export const frontend = "Frontend"
+
 export const jobs = [
-  {
-    title: "Front-End Developer",
-    company: "Ushahidi",
-    description:
-      "Ushahidi is a Nairobi, Kenya based technology company that designs products and initiatives that strive to solve global problems. As part of the design team I was responsible for all front-end code across multiple software products and websites.",
-    date: "May 2013-October 2018",
-    location: "Remote",
-  },
-  {
-    title: "Front-End Developer",
-    company: "Self-Employed",
-    description:
-      "As a freelance web developer I have partnered with creative agencies and individuals on a variety of web projects ranging from custom builds to content management systems.",
-    date: "2011-2013 & 2018-2020",
-    location: "Remote",
-  },
-]
+         {
+           title: `${frontend} Developer`,
+           company: "Ushahidi",
+           description:
+             `Ushahidi is a Nairobi, Kenya based technology company that designs products and initiatives that strive to solve global problems. As part of the design team I was responsible for all ${frontend} code across multiple software products and websites.`,
+           date: "May 2013-October 2018",
+           location: "Remote",
+         },
+         {
+           title: `${frontend} Developer`,
+           company: "Self-Employed",
+           description:
+             "As a freelance web developer I have partnered with creative agencies and individuals on a variety of web projects ranging from custom builds to content management systems.",
+           date: "2011-2013 & 2018-2020",
+           location: "Remote",
+         },
+       ]
 
 export const hardSkills = [
-  "HTML/CSS/Sass/JS",
-  "React.js",
-  "styled components",
-  "front-end build tools (Grunt, Gulp)",
-  "package managers (NPM, Yarn)",
-  "html templating (Handlebars, Twig, etc...)",
-  "git version control (Github)",
-  "responsive design",
-  "web performance and accessibility",
-  "terminal/command line",
-  "cross browser/cross device development",
-  "CSS frameworks (Material UI, Bootstrap, Foundation, etc...)",
-  "Static site generators (Gatsby.js, Jekyll, etc...)",
-  "content management systems (Craft CMS, Wordpress, etc...)",
-]
+         "HTML/CSS/Sass/JS",
+         "React.js",
+         "Typescript",
+         "styled components",
+         `${frontend} build tools (Grunt, Gulp)`,
+         "package managers (NPM, Yarn)",
+         "html templating (Handlebars, Twig, etc...)",
+         "git version control (Github)",
+         "responsive design",
+         "web performance and accessibility",
+         "terminal/command line",
+         "cross browser/cross device development",
+         "CSS frameworks (Material UI, Bootstrap, Foundation, etc...)",
+         "Static site generators (Gatsby.js, Jekyll, etc...)",
+         "content management systems (Craft CMS, Wordpress, etc...)",
+       ]
 
 export const softSkills = [
   "remote working - I am skilled in communicating across multiple time zones with multiple types of positions and personalities. In an autonomous environment I am great at time management and meeting deadlines.",
