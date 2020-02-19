@@ -1,5 +1,7 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
+import { frontend } from "../data/data"
 // import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children }) => {
@@ -15,6 +17,9 @@ const Layout = ({ children }) => {
 
   return (
     <div className="app">
+      <Helmet>
+        <title>Seth Hall - {frontend} Dev</title>
+      </Helmet>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with

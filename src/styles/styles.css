@@ -31,6 +31,16 @@ a {
   &:hover {
     text-decoration: underline;
   }
+
+  &.github {
+    margin-left: 15px;
+    color: $body-color;
+    font-size: 32px;
+
+    &:hover {
+      color: $body-bg;
+    }
+  }
 }
 
 main {
@@ -285,13 +295,11 @@ footer {
 
   a {
     color: $body-color;
-    border-bottom: 1px dotted $body-color;
     text-decoration: none;
     font-weight: bold;
 
     &:hover {
       color: $body-color;
-      border-bottom: 1px solid $body-color;
     }
   }
 }

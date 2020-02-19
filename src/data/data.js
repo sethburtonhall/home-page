@@ -51,7 +51,7 @@ export const softSkills = [
   "listening and validating others",
   "positive and encouraging personality",
   "friendly and laid back demeanor",
-  "a sense of humor",
+  "a good sense of humor",
   "a deep understanding of the development process and the efficiency needed to see it through from start to finish",
 ]
 

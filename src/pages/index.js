@@ -1,23 +1,40 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import Project from "../components/Project"
 import { frontend, jobs, hardSkills, softSkills, projects } from "../data/data"
 import avatar from "../images/seth.jpg"
-import omh from "../images/omh.png"
-import pokemon from "../images/pokemon.png"
-import hallpictures from "../images/hall-pictures.jpg"
-import tmdb from "../images/tmdb.png"
-import ushahidi from "../images/ushahidi.png"
-import ushdotcom from "../images/ushahidi-dotcom.png"
 import "../styles/styles.css"
 
 const IndexPage = () => (
   <Layout>
+    <Helmet>
+      <script
+        src="https://kit.fontawesome.com/856c74694a.js"
+        crossorigin="anonymous"
+      ></script>
+    </Helmet>
     <article className="resume">
       <section className="name">
-        <h1>Seth Hall</h1>
+        <h1>
+          Seth Hall
+          <a
+            href="https://github.com/sethburtonhall"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </h1>
         <h2 className="title">
-          <a href="https://github.com/sethburtonhall">{frontend} Developer</a>
+          <a
+            href="https://github.com/sethburtonhall"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {frontend} Developer
+          </a>
         </h2>
       </section>
 
@@ -34,7 +51,8 @@ const IndexPage = () => (
           from home in an office that I built, with the help of family and
           friends, and it is the perfect environment to learn, create, and ship.
           Every morning when I walk into my office, I am reminded of how blessed
-          I am to love my work. I am most passionate about and interested in
+          I am to love my work. I am most passionate about and interested in{" "}
+          {""}
           {frontend} Development, but each day I gain more knowledge in
           full-stack technologies. Thanks to my tenacity, the web community, and
           the internet, I have taught myself design and development. If we work
