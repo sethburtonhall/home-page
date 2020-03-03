@@ -43,9 +43,16 @@ a {
   }
 }
 
+.app {
+  background: url("../images/bg5.jpg") top right no-repeat;
+  background-color: $body-bg;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.8;
+}
+
 main {
   color: $body-color;
-  background-color: $body-bg;
   padding-top: 30px;
 }
 
@@ -289,9 +296,15 @@ main {
 }
 
 footer {
-  background-color: $body-bg;
+  position: relative;
+  top: -23px;
+  background: rgba(255, 255, 255, 0.6);
+  width: 300px;
+  z-index: -1;
+  border-radius: 5px;
   text-align: center;
-  padding: 20px;
+  padding: 10px 0;
+  margin: 50px auto 0;
 
   a {
     color: $body-color;
@@ -302,4 +315,40 @@ footer {
       color: $body-color;
     }
   }
+
+  /* .photo-credit {
+    a {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 4px 6px;
+      font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
+        "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial,
+        sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.2;
+      display: inline-block;
+      border-radius: 3px;
+    }
+
+    span.svg {
+      display: inline-block;
+      padding: 2px 3px;
+
+      svg {
+        height: 12px;
+        width: auto;
+        position: relative;
+        vertical-align: middle;
+        top: -2px;
+        fill: white;
+      }
+    }
+
+    span.name {
+      display: inline-block;
+      padding: 2px 3px;
+    }
+  } */
 }

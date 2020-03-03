@@ -39,6 +39,7 @@ const Layout = ({ children }) => {
         >
           CSS Grids
         </a>
+        <div className="footer-bg"></div>
       </footer>
     </div>
   )
