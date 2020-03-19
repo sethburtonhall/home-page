@@ -1,3 +1,4 @@
+import dks from "../images/dks.jpg"
 import omh from "../images/omh.png"
 import pokemon from "../images/pokemon.png"
 import hallpictures from "../images/hall-pictures.jpg"
@@ -26,10 +27,12 @@ export const jobs = [
 ]
 
 export const hardSkills = [
-  "HTML/CSS/Sass/JS",
+  "HTML/CSS/JS",
+  "JAMstack",
+  "Headless CMS",
   "React.js",
   "Typescript",
-  "styled components",
+  "Styled Components, Styled System, Sass, PostCSS, etc...",
   `${frontend} build tools (Grunt, Gulp)`,
   "package managers (NPM, Yarn)",
   "html templating (Handlebars, Twig, etc...)",
@@ -40,7 +43,7 @@ export const hardSkills = [
   "cross browser/cross device development",
   "CSS frameworks (Material UI, Bootstrap, Foundation, etc...)",
   "Static site generators (Gatsby.js, Jekyll, etc...)",
-  "content management systems (Craft CMS, Wordpress, etc...)",
+  "content management systems (DatoCMS, CraftCMS, etc...)",
 ]
 
 export const softSkills = [
@@ -56,6 +59,14 @@ export const softSkills = [
 ]
 
 export const projects = [
+  {
+    src: dks,
+    title: "DKS Studio",
+    meta: ["JAMstack", "Gatsby", "Dato CMS", "GraphQL", "Netlify"],
+    app: false,
+    url: "https://davidkstanley.studio/",
+    srcUrl: "https://github.com/sethburtonhall/dks3.0",
+  },
   {
     src: ushahidi,
     title: "Ushahidi Platform",
