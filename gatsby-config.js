@@ -1,27 +1,27 @@
 module.exports = {
   siteMetadata: {
-    title: `Seth Hall - Front End Developer`,
-    description: `The online resume of Seth Hall.`,
+    title: `Seth Hall`,
+    description: `The online home of Seth Hall.`,
     author: `@sethburtonhall`,
   },
   plugins: [
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/seth.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/seth-code.jpg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
