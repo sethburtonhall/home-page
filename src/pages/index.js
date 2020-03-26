@@ -83,7 +83,7 @@ const IndexPage = ({ data }) => {
                 <div className="toggle-content">
                   <div className="code-content">
                     <button>
-                      <Link to="/portfolio">View Portfolio</Link>
+                      <Link to="/front-end-portfolio">View Portfolio</Link>
                     </button>
                   </div>
                   <div className="film-content">
