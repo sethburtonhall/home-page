@@ -337,7 +337,7 @@ export const StyledResume = styled.div`
   .resume {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 80px 80px auto;
     grid-gap: 30px 60px;
     grid-template-areas:
       "photo"
@@ -357,6 +357,7 @@ export const StyledResume = styled.div`
 
     @media ${device.laptop} {
       grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
       grid-template-areas:
         "name photo"
         "about about"
