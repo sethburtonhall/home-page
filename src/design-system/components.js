@@ -3,205 +3,189 @@ import styled from "styled-components"
 // import css from "@styled-system/css" // allows sass like nesting and access to theme file
 import { device } from "./MediaQueries"
 import { theme } from "./theme"
-import bg from "../images/bg4.jpg"
-import bg2 from "../images/bg6.jpg"
 
 // Layout
 export const StyledLayout = styled.div`
-         &.code {
-           background: url(${bg}) top right no-repeat;
-           background-color: ${theme.bg};
-           background-size: cover;
-           background-attachment: fixed;
-           opacity: 0.8;
-           transition: background-image 0.25s ease-in-out;
+  &.code {
+    nav .nav-link.active-code {
+      background: ${theme.white};
+      padding: 10px 15px;
+      border-radius: 100px;
+      color: ${theme.black};
+    }
+  }
 
-           nav .nav-link.active-code {
-             background: ${theme.white};
-             padding: 10px 15px;
-             border-radius: 100px;
-             color: ${theme.black};
-           }
-         }
+  &.film {
+    nav .nav-link.active-film {
+      background: ${theme.black};
+      padding: 10px 16px;
+      border-radius: 100px;
+      color: ${theme.white};
+    }
+  }
 
-         &.film {
-           background: url(${bg2}) top right no-repeat;
-           background-color: ${theme.bg};
-           background-size: cover;
-           background-attachment: fixed;
-           opacity: 0.8;
-           transition: background-image 0.25s ease-in-out;
+  main {
+    height: 100%;
+  }
 
-           nav .nav-link.active-film {
-             background: ${theme.black};
-             padding: 10px 16px;
-             border-radius: 100px;
-             color: ${theme.white};
-           }
-         }
+  .toggle-content {
+    position: relative;
+    text-align: center;
 
-         main {
-           height: 100%;
-         }
+    @media ${device.laptop} {
+      text-align: left;
+    }
 
-         .toggle-content {
-           position: relative;
-           text-align: center;
+    &.toggle-header {
+      height: 45px;
+    }
 
-           @media ${device.laptop} {
-             text-align: left;
-           }
+    &.toggle-intro {
+      height: 100%;
+    }
 
-           &.toggle-header {
-             height: 45px;
-           }
+    &.toggle-avatar {
+      height: 250px;
+      width: 250px;
+    }
 
-           &.toggle-intro {
-             height: 100%;
-           }
+    .code-content,
+    .film-content {
+      position: absolute;
+      width: 100%;
+    }
+  }
 
-           &.toggle-avatar {
-             height: 250px;
-             width: 250px;
-           }
+  &.code {
+    .code-content {
+      opacity: 1;
+      transition: opacity 0.25s ease-in-out;
+      z-index: 1;
+    }
 
-           .code-content,
-           .film-content {
-             position: absolute;
-             width: 100%;
-           }
-         }
+    .film-content {
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out;
+      z-index: 0;
+    }
 
-         &.code {
-           .code-content {
-             opacity: 1;
-             transition: opacity 0.25s ease-in-out;
-             z-index: 1;
-           }
+    .content-footer {
+      button {
+        background: ${theme.white};
+        transition: all 0.25s ease-in-out;
 
-           .film-content {
-             opacity: 0;
-             transition: opacity 0.25s ease-in-out;
-             z-index: 0;
-           }
+        &:hover {
+          background: ${theme.black};
 
-           .content-footer {
-             button {
-               background: ${theme.white};
-               transition: all 0.25s ease-in-out;
+          a {
+            color: ${theme.white};
+            transition: all 0.25s ease-in-out;
+          }
+        }
 
-               &:hover {
-                 background: ${theme.black};
+        a {
+          color: ${theme.black};
+        }
+      }
 
-                 a {
-                   color: ${theme.white};
-                   transition: all 0.25s ease-in-out;
-                 }
-               }
+      .social .code-content {
+        position: relative;
+      }
+    }
 
-               a {
-                 color: ${theme.black};
-               }
-             }
+    .social a {
+      .fa-stack {
+        .fa-stack-2x {
+          color: ${theme.white};
+          transition: color 0.25s ease-in-out;
+        }
 
-             .social .code-content {
-               position: relative;
-             }
-           }
+        .fa-stack-1x {
+          color: ${theme.black};
+          transition: color 0.25s ease-in-out;
+        }
+      }
 
-           .social a {
-             .fa-stack {
-               .fa-stack-2x {
-                 color: ${theme.white};
-                 transition: color 0.25s ease-in-out;
-               }
+      &:hover {
+        .fa-stack {
+          .fa-stack-2x {
+            color: ${theme.black};
+          }
 
-               .fa-stack-1x {
-                 color: ${theme.black};
-                 transition: color 0.25s ease-in-out;
-               }
-             }
+          .fa-stack-1x {
+            color: ${theme.white};
+          }
+        }
+      }
+    }
+  }
 
-             &:hover {
-               .fa-stack {
-                 .fa-stack-2x {
-                   color: ${theme.black};
-                 }
+  &.film {
+    .code-content {
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out;
+      z-index: 0;
+    }
 
-                 .fa-stack-1x {
-                   color: ${theme.white};
-                 }
-               }
-             }
-           }
-         }
+    .film-content {
+      opacity: 1;
+      transition: opacity 0.25s ease-in-out;
+      z-index: 1;
+    }
 
-         &.film {
-           .code-content {
-             opacity: 0;
-             transition: opacity 0.25s ease-in-out;
-             z-index: 0;
-           }
+    .content-footer {
+      button {
+        background: ${theme.black};
+        border: none;
+        transition: all 0.25s ease-in-out;
 
-           .film-content {
-             opacity: 1;
-             transition: opacity 0.25s ease-in-out;
-             z-index: 1;
-           }
+        &:hover {
+          background: ${theme.white};
 
-           .content-footer {
-             button {
-               background: ${theme.black};
-               border: none;
-               transition: all 0.25s ease-in-out;
+          a {
+            color: ${theme.black};
+            transition: all 0.25s ease-in-out;
+          }
+        }
 
-               &:hover {
-                 background: ${theme.white};
+        a {
+          color: ${theme.white};
+        }
+      }
 
-                 a {
-                   color: ${theme.black};
-                   transition: all 0.25s ease-in-out;
-                 }
-               }
+      .social .code-content {
+        position: relative;
+        z-index: -1;
+      }
+    }
 
-               a {
-                 color: ${theme.white};
-               }
-             }
+    .social a {
+      .fa-stack {
+        .fa-stack-2x {
+          color: ${theme.black};
+          transition: color 0.25s ease-in-out;
+        }
 
-             .social .code-content {
-               position: relative;
-               z-index: -1;
-             }
-           }
+        .fa-stack-1x {
+          color: ${theme.white};
+          transition: color 0.25s ease-in-out;
+        }
+      }
 
-           .social a {
-             .fa-stack {
-               .fa-stack-2x {
-                 color: ${theme.black};
-                 transition: color 0.25s ease-in-out;
-               }
+      &:hover {
+        .fa-stack {
+          .fa-stack-2x {
+            color: ${theme.white};
+          }
 
-               .fa-stack-1x {
-                 color: ${theme.white};
-                 transition: color 0.25s ease-in-out;
-               }
-             }
-
-             &:hover {
-               .fa-stack {
-                 .fa-stack-2x {
-                   color: ${theme.white};
-                 }
-
-                 .fa-stack-1x {
-                   color: ${theme.black};
-                 }
-               }
-             }
-           }
-         }
-       `
+          .fa-stack-1x {
+            color: ${theme.black};
+          }
+        }
+      }
+    }
+  }
+`
 
 // Content
 export const StyledContent = styled.div`
@@ -218,10 +202,6 @@ export const StyledContent = styled.div`
          justify-items: center;
          align-items: center;
          padding: 30px;
-
-         @media ${device.tablet} {
-           grid-template-rows: 100px 260px;
-         }
 
          @media ${device.laptop} {
            height: 100%;
@@ -302,6 +282,10 @@ export const StyledContent = styled.div`
            flex-direction: column;
            align-self: end;
            width: 100%;
+
+           @media ${device.tabletUp} {
+             flex-direction: row;
+           }
 
            @media ${device.laptop} {
              grid-column-start: 2;

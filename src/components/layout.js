@@ -9,7 +9,7 @@ import { StyledLayout } from "../design-system"
 
 const Layout = ({ children, toggle }) => {
   return (
-    <StyledLayout className={`app ${toggle ? 'film' : 'code'}`}>
+    <StyledLayout className={`${toggle ? 'film' : 'code'}`}>
       <Helmet>
         <script
           src="https://kit.fontawesome.com/856c74694a.js"
