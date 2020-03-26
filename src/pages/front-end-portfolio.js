@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 // Components
 import Layout from "../components/layout"
@@ -14,19 +14,7 @@ import avatar from "../images/seth-code.jpg"
 import { GlobalStyle, StyledFooter, StyledResume } from "../design-system"
 
 const FrontEnd = () => {
-  const [bodyClass, setBodyClass] = useState(false)
 
-  const toggleCode = () => {
-    if (bodyClass) {
-      setBodyClass(false)
-    }
-  }
-
-  const toggleFilm = () => {
-    if (bodyClass !== true) {
-      setBodyClass(true)
-    }
-  }
   return (
     <>
     <GlobalStyle />
@@ -34,7 +22,7 @@ const FrontEnd = () => {
       <Layout>
         <SEO title="Front-end Portfolio" />
         <Helmet>
-          <body className={`${bodyClass ? "film" : "code"}`} />
+          <body className="code" />
           <title>Code</title>
         </Helmet>
         <article className="resume">
