@@ -282,7 +282,6 @@ export const StyledContent = styled.div`
     flex-direction: column;
     align-self: end;
     width: 100%;
-    
 
     @media ${device.laptop} {
       grid-column-start: 2;
@@ -320,6 +319,17 @@ export const StyledContent = styled.div`
 `
 
 export const StyledResume = styled.div`
+  a {
+    &.github {
+      margin-left: 15px;
+      color: #091d29;
+      font-size: 32px;
+
+      &:hover {
+        color: #2b88c2;
+      }
+    }
+  }
   main {
     padding-top: 30px;
   }
@@ -457,13 +467,17 @@ export const StyledResume = styled.div`
 
       .project-card {
         overflow: hidden;
-        width: 47%;
+        width: 100%;
         background-color: ${theme.white};
         margin-bottom: 30px;
         border: 1px solid ${theme.bg};
         border-radius: ${theme.borderRadius};
         transition: all 0.2s ease-in-out;
         box-shadow: ${theme.boxShadow};
+
+        @media ${device.mobileLUp} {
+          width: 47%;
+        }
 
         @media ${device.tabletUp} {
           width: 30%;

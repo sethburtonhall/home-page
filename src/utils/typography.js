@@ -5,10 +5,6 @@ funstonTheme.baseFontSize = "18px"
 
 funstonTheme.overrideThemeStyles = () => {
   return {
-    html: {
-      height: `100%`,
-    },
-    body: {},
     h1: {
       marginBottom: `5px`,
     },
@@ -26,16 +22,6 @@ funstonTheme.overrideThemeStyles = () => {
 
       "&:hover": {
         textDecoration: `underline`,
-      },
-
-      "&.github": {
-        marginLeft: `15px`,
-        color: `#091d29`,
-        fontSize: `32px`,
-
-        "&:hover": {
-          color: `#2b88c2`,
-        },
       },
     },
   }
