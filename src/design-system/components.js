@@ -152,6 +152,7 @@ export const StyledLayout = styled.div`
            .content-footer {
              button {
                background: ${theme.black};
+               border: none;
                transition: all 0.25s ease-in-out;
 
                &:hover {
@@ -314,19 +315,23 @@ export const StyledContent = styled.div`
 
              button {
                width: 125px;
-               padding: 5px;
+               padding: 5px 0;
                border-radius: 5px;
                cursor: pointer;
 
-               a:hover {
-                 text-decoration: none;
+               a {
+                 padding: 8px 13px;
+
+                 &:hover {
+                   text-decoration: none;
+                 }
                }
              }
 
              .social {
                display: flex;
                justify-content: space-between;
-               width: 130px;
+               width: 175px;
                font-size: 18px;
              }
            }

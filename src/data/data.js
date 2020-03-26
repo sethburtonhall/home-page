@@ -12,7 +12,7 @@ export const codeBio =
   "I am a Front-end Engineer living in the great state of North Carolina. I enjoy all things UI and currently favor the React, Headless CMS, and JAMstack ecosystems. I am a Certified Scrum Master who thrives in the Agile environment and a strong advocate of remote work. I am currently available for work. Take a look at my portfolio and maybe we can work together."
 
 export const filmBio =
-  "I am also a Creative Producer with an MFA in Creative Producing from the University of North Carolina School of the Arts. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content with any and all available resources."
+  "I also have an MFA in Creative Producing from UNCSA. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content while providing a safe and nurturing environment for film creatives."
 
 export const jobs = [
   {
@@ -131,17 +131,27 @@ export const projects = [
 export const socialNetworks = [
   {
     url: "https://github.com/sethburtonhall",
-    faClass: "fa-github",
+    filmUrl: "https://github.com/sethburtonhall",
+    faClass: "fab fa-github",
     codeContent: true,
   },
   {
     url: "https://www.instagram.com/sethburtonhall/",
-    faClass: "fa-instagram",
+    filmUrl: "https://www.instagram.com/sethburtonhall/",
+    faClass: "fab fa-instagram",
     codeContent: false,
   },
   {
     url: "https://www.linkedin.com/in/sethburtonhall/",
-    faClass: "fa-linkedin-in",
+    filmUrl: "https://www.linkedin.com/in/sethburtonhall/",
+    faClass: "fab fa-linkedin-in",
+    codeContent: false,
+  },
+
+  {
+    url: "mailto:sethburtonhall@gmail.com",
+    filmUrl: "mailto:seth@hallpictures.com",
+    faClass: "fas fa-envelope",
     codeContent: false,
   },
 ]

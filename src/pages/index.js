@@ -104,7 +104,7 @@ const IndexPage = ({ data }) => {
               <div className="social">
                 {socialNetworks.map((social, index) => (
                   <a
-                    href={social.url}
+                    href={bodyClass ? `${social.filmUrl}` : `${social.url}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={social.codeContent ? "code-content" : ""}
@@ -112,7 +112,7 @@ const IndexPage = ({ data }) => {
                     <div className="fa-stack fa-1x">
                       <i class="fas fa-circle fa-stack-2x"></i>
                       <i
-                        class={`fab fa-stack-1x fa-inverse ${social.faClass}`}
+                        class={`fa-stack-1x fa-inverse ${social.faClass}`}
                       ></i>
                     </div>
                   </a>
