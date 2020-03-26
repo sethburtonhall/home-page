@@ -9,21 +9,21 @@ import ushdotcom from "../images/ushahidi-dotcom.png"
 export const frontend = "Front-end"
 
 export const codeBio =
-  "I am a Front-end Engineer living in the great state of North Carolina. I have been developing for 9 years and enjoy all things UI. I currently favor the React, Headless CMS, and JAMstack ecosystems. I am a Certified Scrum Master who thrives in the Agile environment. I am a strong advocate of remote work and have been working as a freelancer or as a part of a distributed team for 14 years. I am currently available for work. Take a look at my portfolio and maybe we can work together."
+  "I am a Front-end Engineer living in the great state of North Carolina. I enjoy all things UI and currently favor the React, Headless CMS, and JAMstack ecosystems. I am a Certified Scrum Master who thrives in the Agile environment and a strong advocate of remote work. I am currently available for work. Take a look at my portfolio and maybe we can work together."
 
 export const filmBio =
-  "I also love film. So much so that I went back to school to earn an MFA in Creative Producing at the University of North Carolina School of the Arts School of Film. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content with any and all available resources. We place a high value on quality and are diligent throughout the whole filmmaking process, but most important is how we provide a safe and nurturing environment for film creatives and how we treat others with kindness and respect. Filmmaking is a miracle in collaboration and it takes a village. To us, people are most important."
+  "I am also a Creative Producer with an MFA in Creative Producing from the University of North Carolina School of the Arts. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content with any and all available resources."
 
 export const jobs = [
   {
-    title: `${frontend} Developer`,
+    title: `${frontend} Engineer`,
     company: "Ushahidi",
     description: `Ushahidi is a Nairobi, Kenya based technology company that designs products and initiatives that strive to solve global problems. As part of the design team I was responsible for all front-end code across multiple software products and websites.`,
     date: "May 2013-October 2018",
     location: "Remote",
   },
   {
-    title: `${frontend} Developer`,
+    title: `${frontend} Engineer`,
     company: "Self-Employed",
     description:
       "As a freelance web developer I have partnered with creative agencies and individuals on a variety of web projects ranging from custom builds to content management systems.",
