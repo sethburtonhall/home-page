@@ -10,17 +10,15 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     &.code {
+      background-color: #8E236F;
       background: url(${bg}) no-repeat center center fixed;
-      background-size: cover;
-      background-color: ${theme.bg};
-      /* opacity: 0.8; */
+      background-size: cover;;
       transition: background-image 0.25s ease-in-out;
     }
     &.film {
+      background-color: #033878;
       background: url(${bg2}) no-repeat center center fixed;
-      background-color: ${theme.bg};
       background-size: cover;
-      /* opacity: 0.8; */
       transition: background-image 0.25s ease-in-out;
     }
   }
