@@ -53,18 +53,18 @@ export const StyledLayout = styled.div`
            }
 
            &.toggle-header {
-             height: 30px;
+             height: 45px;
            }
 
            &.toggle-intro {
-             height: 100px;
+             height: 100%;
            }
 
            &.toggle-avatar {
-            height: 250px;
-            width: 250px;
+             height: 250px;
+             width: 250px;
            }
-           
+
            .code-content,
            .film-content {
              position: absolute;
@@ -204,110 +204,134 @@ export const StyledLayout = styled.div`
 
 // Content
 export const StyledContent = styled.div`
-  min-height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 260px 350px;
-  grid-gap: 0px;
-  grid-template-areas:
-    "header"
-    "avatar"
-    "content";
-  justify-items: center;
-  align-items: center;
-  padding: 30px;
+         min-height: 100%;
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 100px 260px 400px;
+         grid-gap: 0px;
+         grid-template-areas:
+           "header"
+           "avatar"
+           "content"
+           "footer";
+         justify-items: center;
+         align-items: center;
+         padding: 30px;
 
-  @media ${device.laptop} {
-    height: 100%;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 100px 500px;
-    grid-gap: 30px;
-    grid-template-areas:
-      "header header"
-      "avatar content";
-    width: 100%;
-    margin: 0 auto;
-  }
+         @media ${device.tablet} {
+           grid-template-rows: 100px 260px;
+         }
 
-  @media ${device.tablet} {
-    width: 80%;
-    margin: 0 auto;
-  }
+         @media ${device.laptop} {
+           height: 100%;
+           grid-template-columns: 1fr 3fr;
+           grid-template-rows: 200px 250px;
+           grid-gap: 0 30px;
+           grid-template-areas:
+             "header header"
+             "avatar content"
+             "footer footer";
 
-  @media ${device.laptop} {
-    width: 80%;
-  }
+           width: 100%;
+           margin: 0 auto;
+         }
 
-  @media ${device.desktop} {
-    width: 60%;
-  }
+         @media ${device.tabletUp} {
+           width: 90%;
+           margin: 0 auto;
+         }
 
-  .header {
-    grid-area: header;
-    width: 150px;
-    align-self: start;
+         @media ${device.laptop} {
+           width: 85%;
+           padding: 30px 0;
+         }
 
-    @media ${device.tabletUp} {
-      justify-self: right;
-    }
-  }
+         @media ${device.desktop} {
+           width: 60%;
+         }
 
-  .avatar {
-    grid-area: avatar;
+         .header {
+           grid-area: header;
+           width: 150px;
+           align-self: start;
 
-    @media ${device.laptop} {
-      /* padding-top: 100px; */
-    }
+           @media ${device.tabletUp} {
+             justify-self: right;
+           }
+         }
 
-    .image {
-      border-radius: 150px;
-      width: 250px;
-      max-width: 300px;
-      border: 3px solid ${theme.white};
-    }
-  }
+         .avatar {
+           grid-area: avatar;
+           align-self: start;
 
-  .content {
-    grid-area: content;
-    color: ${theme.white};
-    text-align: center;
-    width: 100%;
+           @media ${device.laptop} {
+             /* padding-top: 100px; */
+           }
 
-    @media ${device.laptop} {
-      text-align: left;
-      /* padding-top: 100px; */
-    }
+           .image {
+             border-radius: 150px;
+             width: 250px;
+             max-width: 300px;
+             border: 3px solid ${theme.white};
+           }
+         }
 
-    p {
-      text-align: justify;
-      margin-bottom: 30px;
-    }
+         .content {
+           grid-area: content;
+           color: ${theme.white};
+           text-align: center;
+           align-self: start;
+           padding-top: 30px;
+           width: 100%;
 
-    .content-footer {
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
+           @media ${device.laptop} {
+             text-align: left;
+             padding-top: 0;
+           }
 
-      button {
-        width: 125px;
-        padding: 5px;
-        border-radius: 5px;
-        cursor: pointer;
+           p {
+             text-align: justify;
+             margin: 0;
+           }
+         }
 
-        a:hover {
-          text-decoration: none;
-        }
-      }
+         .footer {
+           grid-area: footer;
+           display: flex;
+           flex-direction: column;
+           align-self: end;
+           width: 100%;
 
-      .social {
-        display: flex;
-        justify-content: space-between;
-        width: 130px;
-        font-size: 18px;
-      }
-    }
-  }
-`
+           @media ${device.laptop} {
+             grid-column-start: 2;
+             align-self: start;
+           }
+
+           .content-footer {
+             display: flex;
+             justify-content: space-between;
+             align-content: center;
+
+             button {
+               width: 125px;
+               padding: 5px;
+               border-radius: 5px;
+               cursor: pointer;
+
+               a:hover {
+                 text-decoration: none;
+               }
+             }
+
+             .social {
+               display: flex;
+               justify-content: space-between;
+               width: 130px;
+               font-size: 18px;
+             }
+           }
+         }
+       `
 
 export const StyledResume = styled.div`
   main {

@@ -18,7 +18,7 @@ const FrontEnd = () => (
     <Layout>
       <SEO title="Front-end Portfolio" />
       <Helmet>
-        <title>Seth Hall - {frontend} Dev</title>
+        <title>Code</title>
       </Helmet>
       <article className="resume">
         <section className="name">

@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <div style={style}>
         <Helmet>
-          <title>Seth Hall</title>
+          <title>Home</title>
         </Helmet>
         <StyledContent>
           <section className="header">
@@ -78,6 +78,8 @@ const IndexPage = ({ data }) => {
               <span className="code-content">{codeBio}</span>
               <span className="film-content">{filmBio}</span>
             </p>
+          </section>
+          <section className="footer">
             <div className="content-footer">
               <div className="links">
                 <div className="toggle-content">
