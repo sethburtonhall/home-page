@@ -9,7 +9,7 @@ import ushdotcom from "../images/ushahidi-dotcom.png"
 export const frontend = "Front-end"
 
 export const codeBio =
-  "I am a Front-end Engineer living in the great state of North Carolina. I enjoy all things UI and currently favor the React, Headless CMS, and JAMstack ecosystems. I am a Certified Scrum Master who thrives in the Agile environment and a strong advocate of remote work. I am currently available for work. Take a look at my portfolio and maybe we can work together."
+  "I am a Front-end Engineer living in the great state of North Carolina. I enjoy all things front end and currently favor the React, Headless CMS, and JAMstack ecosystems. I am a Certified Scrum Master who thrives in the Agile environment and a strong advocate of remote work. I am currently available for work. Take a look at my portfolio and maybe we can work together."
 
 export const filmBio =
   "I also have an MFA in Creative Producing from UNCSA. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content while providing a safe and nurturing environment for film creatives."
