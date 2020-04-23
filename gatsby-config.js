@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Seth Hall Creative`,
-    description: `The online home of Seth Hall.`,
+    description: `Code/Film`,
     author: `@sethburtonhall`,
   },
   plugins: [

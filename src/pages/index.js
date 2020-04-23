@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import Nav from "../components/Nav"
 
 // Data
-import { codeBio, filmBio, socialNetworks } from "../data/data"
+import { frontend, codeBio, filmBio, socialNetworks } from "../data/data"
 
 // Styles
 import {
@@ -27,6 +27,7 @@ import {
 
 const IndexPage = ({ data }) => {
   const [bodyClass, setBodyClass] = useState(false)
+  const image = data.socialImage.childImageSharp.fluid
 
   const toggleCode = () => {
     if (bodyClass) {
@@ -44,7 +45,7 @@ const IndexPage = ({ data }) => {
     <>
       <GlobalStyle />
       <Layout toggle={bodyClass}>
-        <SEO title="Home" />
+        <SEO title="Seth Hall Creative" image={image} />
         <div>
           <Helmet>
             <body className={`${bodyClass ? "film" : "code"}`} />
@@ -76,7 +77,7 @@ const IndexPage = ({ data }) => {
               <Text is="h1">Seth Hall</Text>
               <div className="toggle-content toggle-header">
                 <Text is="h3" className="code-content">
-                  Front-end Engineer
+                  {frontend} Engineer
                 </Text>
                 <Text is="h3" className="film-content">
                   Creative Producer
@@ -145,6 +146,13 @@ export const query = graphql`
       }
     }
     film: file(relativePath: { eq: "seth-film.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    socialImage: file(relativePath: { eq: "social-card.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid
