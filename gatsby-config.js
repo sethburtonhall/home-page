@@ -3,6 +3,7 @@ module.exports = {
     title: `Seth Hall Creative`,
     description: `Code/Film`,
     author: `@sethburtonhall`,
+    siteUrl: `https://sethhallcreative.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
