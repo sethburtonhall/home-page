@@ -9,7 +9,7 @@ import ushdotcom from "../images/ushahidi-dotcom.png"
 export const frontend = "Frontend"
 
 export const codeBio =
-  "I am a Frontend Engineer living in the great state of North Carolina. I enjoy all things front end and currently favor the React, Headless CMS, and JAMstack ecosystems. I am a Certified Scrum Master who thrives in the Agile environment and a strong advocate of remote work. I am currently available for work. Take a look at my portfolio and maybe we can work together."
+  "I am a Frontend Engineer living in North Carolina. I enjoy the work and favor the JAMstack ecosystem. I currently work at Ocupop."
 
 export const filmBio =
   "I also have an MFA in Creative Producing from UNCSA. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content while providing a safe and nurturing environment for film creatives."
@@ -36,20 +36,19 @@ export const hardSkills = [
   "HTML/CSS/JS",
   "JAMstack",
   "Headless CMS",
-  "React.js",
-  "Typescript",
-  "Styled Components, Styled System, Sass, PostCSS, etc...",
+  "React",
+  "static site generators (Gatsby, Jekyll, etc...)",
+  "DatoCMS, CraftCMS, etc...",
+  "styled components, styled system, Sass, PostCSS, etc...",
   `${frontend} build tools (Grunt, Gulp)`,
   "package managers (NPM, Yarn)",
   "html templating (Handlebars, Twig, etc...)",
+  "CSS frameworks (Material UI, Bootstrap, Foundation, etc...)",
   "git version control (Github)",
   "responsive design",
   "web performance and accessibility",
   "terminal/command line",
-  "cross browser/cross device development",
-  "CSS frameworks (Material UI, Bootstrap, Foundation, etc...)",
-  "Static site generators (Gatsby.js, Jekyll, etc...)",
-  "content management systems (DatoCMS, CraftCMS, etc...)",
+  // "cross browser/cross device development",
 ]
 
 export const softSkills = [
