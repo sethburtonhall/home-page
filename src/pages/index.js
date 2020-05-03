@@ -120,9 +120,13 @@ const IndexPage = ({ data }) => {
                     >
                       <div className="fa-stack fa-1x">
                         <i class="fas fa-circle fa-stack-2x"></i>
-                        <i
-                          class={`fa-stack-1x fa-inverse ${social.faClass}`}
-                        ></i>
+                        <i class={`fa-stack-1x fa-inverse ${social.faClass}`}>
+                          <span
+                            className={social.hasContent ? "has-content" : ""}
+                          >
+                            {social.hasContent ? `${social.content}` : ""}
+                          </span>
+                        </i>
                       </div>
                     </a>
                   ))}

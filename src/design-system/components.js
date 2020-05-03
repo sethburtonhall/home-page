@@ -188,7 +188,9 @@ export const StyledLayout = styled.div`
 `
 
 // Content
-export const StyledContent = styled.div`
+export const StyledContent = styled.div.attrs({
+  className: "styled-content"
+})`
   min-height: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -230,6 +232,8 @@ export const StyledContent = styled.div`
   @media ${device.desktop} {
     width: 60%;
   }
+
+
 
   .header {
     grid-area: header;
@@ -311,8 +315,15 @@ export const StyledContent = styled.div`
       .social {
         display: flex;
         justify-content: space-between;
-        width: 175px;
+        width: 225px;
         font-size: 18px;
+
+        .has-content {
+          position: relative;
+          top: -2px;
+          right: 1px;
+          font-size: 14px;
+        }
       }
     }
   }

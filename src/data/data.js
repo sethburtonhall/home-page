@@ -128,29 +128,37 @@ export const projects = [
 ]
 
 export const socialNetworks = [
-  {
-    url: "https://github.com/sethburtonhall",
-    filmUrl: "https://github.com/sethburtonhall",
-    faClass: "fab fa-github",
-    codeContent: true,
-  },
-  {
-    url: "https://www.instagram.com/sethburtonhall/",
-    filmUrl: "https://www.instagram.com/sethburtonhall/",
-    faClass: "fab fa-instagram",
-    codeContent: false,
-  },
-  {
-    url: "https://www.linkedin.com/in/sethburtonhall/",
-    filmUrl: "https://www.linkedin.com/in/sethburtonhall/",
-    faClass: "fab fa-linkedin-in",
-    codeContent: false,
-  },
+         {
+           url: "https://github.com/sethburtonhall",
+           filmUrl: "https://github.com/sethburtonhall",
+           faClass: "fab fa-github",
+           codeContent: true,
+         },
+         {
+           url: "https://www.instagram.com/sethburtonhall/",
+           filmUrl: "https://www.instagram.com/the.creative.producer/",
+           faClass: "fab fa-instagram",
+           codeContent: false,
+         },
+         {
+           url: "https://www.linkedin.com/in/sethburtonhall/",
+           filmUrl: "https://www.linkedin.com/in/sethburtonhall/",
+           faClass: "fab fa-linkedin-in",
+           codeContent: false,
+         },
 
-  {
-    url: "mailto:sethburtonhall@gmail.com",
-    filmUrl: "mailto:seth@hallpictures.com",
-    faClass: "fas fa-envelope",
-    codeContent: false,
-  },
-]
+         {
+           url: "mailto:sethburtonhall@gmail.com",
+           filmUrl: "mailto:seth@hallpictures.com",
+           faClass: "fas fa-envelope",
+           codeContent: false,
+         },
+         {
+           url: "https://github.com/sethburtonhall/home-page",
+           filmUrl: "https://github.com/sethburtonhall/home-page",
+          //  faClass: "",
+           codeContent: false,
+           hasContent: true,
+           content: "v1.0"
+         },
+       ]
