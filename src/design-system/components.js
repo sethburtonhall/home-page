@@ -72,6 +72,7 @@ export const StyledLayout = styled.div`
     .content-footer {
       button {
         background: ${theme.white};
+        border: none;
         transition: all 0.25s ease-in-out;
 
         &:hover {
@@ -441,9 +442,10 @@ export const StyledResume = styled.div`
     grid-area: work;
 
     .job {
-      &:first-of-type {
+      margin-bottom: 30px;
+      /* &:first-of-type {
         margin-bottom: 30px;
-      }
+      } */
 
       .job-title {
         margin: 10px 0;

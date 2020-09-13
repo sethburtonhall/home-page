@@ -69,8 +69,8 @@ const FrontEnd = () => {
                 community, and the internet, I have taught myself design and
                 development. If we work together and I don't know something, I
                 will say so and then I will learn whatever is needed for that
-                specific project. I am married and have an 8-year-old daughter
-                and a 5-year-old son, so it is important to balance my time
+                specific project. I am married and have an 9-year-old daughter
+                and a 6-year-old son, so it is important to balance my time
                 between work and family. I possess a strong passion and
                 dedication to creative craft and vocation and I am ready to work
                 on great products with an even greater team. (This could be
@@ -112,10 +112,12 @@ const FrontEnd = () => {
                 <div key={i} className="job">
                   <h4 className="job-title">{job.title}</h4>
                   <h5 className="company">
-                    {job.company}
+                    {job.company} - {job.type}
+                    <br />
+                    <br />
                     <span>
                       {" "}
-                      | {job.date} | {job.location}
+                      {job.date} | {job.location}
                     </span>
                   </h5>
                   <p>{job.description}</p>

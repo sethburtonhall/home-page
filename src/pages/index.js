@@ -92,11 +92,11 @@ const IndexPage = ({ data }) => {
               <div className="content-footer">
                 <div className="links">
                   <div className="toggle-content">
-                    {/* <div className="code-content">
+                    <div className="code-content">
                       <button>
                         <Link to="/front-end-portfolio">View Portfolio</Link>
                       </button>
-                    </div> */}
+                    </div>
                     <div className="film-content">
                       <button bg="black" color="white">
                         <a

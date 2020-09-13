@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components"
-import { theme } from "./theme"
+// import { theme } from "./theme"
 import { device } from "./MediaQueries"
 import bg from "../images/bg4.jpg"
 import bg2 from "../images/bg6.jpg"
@@ -44,5 +44,5 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  
+
 `

@@ -1,3 +1,4 @@
+import art from "../images/art.png"
 import dks from "../images/dks.jpg"
 import omh from "../images/omh.png"
 import pokemon from "../images/pokemon.png"
@@ -16,10 +17,19 @@ export const filmBio =
 
 export const jobs = [
   {
+    title: `${frontend} Developer`,
+    company: "Ocupop",
+    description: `Ocupop is a creative design agency based out of Milwaukee, WI. As a member of the dev team, I've worked on a custom e-commerce platform and custom CMS marketing sites.`,
+    date: "May 2020-Present",
+    type: "Contract",
+    location: "Remote",
+  },
+  {
     title: `${frontend} Engineer`,
     company: "Ushahidi",
     description: `Ushahidi is a Nairobi, Kenya based technology company that designs products and initiatives that strive to solve global problems. As part of the design team I was responsible for all front end code across multiple software products and websites.`,
     date: "May 2013-October 2018",
+    type: "Full Time",
     location: "Remote",
   },
   {
@@ -28,6 +38,7 @@ export const jobs = [
     description:
       "As a freelance web developer I have partnered with creative agencies and individuals on a variety of web projects ranging from custom builds to content management systems.",
     date: "2011-2013 & 2018-2020",
+    type: "Freelance",
     location: "Remote",
   },
 ]
@@ -36,9 +47,9 @@ export const hardSkills = [
   "HTML/CSS/JS",
   "JAMstack",
   "Headless CMS",
-  "React",
-  "static site generators (Gatsby, Jekyll, etc...)",
-  "DatoCMS, CraftCMS, etc...",
+  "React/Redux/Firebase",
+  "static site generators (Gatsby, Jekyll)",
+  "DatoCMS, CraftCMS, CloudCannon",
   "styled components, styled system, Sass, PostCSS, etc...",
   `${frontend} build tools (Grunt, Gulp)`,
   "package managers (NPM, Yarn)",
@@ -64,6 +75,14 @@ export const softSkills = [
 ]
 
 export const projects = [
+  {
+    src: art,
+    title: "Artist Rescue Trust",
+    meta: ["JAMstack", "Gatsby", "Dato CMS", "GraphQL", "Netlify"],
+    app: false,
+    url: "https://artistrescue.org/",
+    srcUrl: "https://github.com/OurKettle/artist-rescue-trust",
+  },
   {
     src: dks,
     title: "DKS Studio",
