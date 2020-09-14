@@ -10,7 +10,7 @@ import ushdotcom from "../images/ushahidi-dotcom.png"
 export const frontend = "Frontend"
 
 export const codeBio =
-  "I am a Frontend Engineer living in North Carolina. I enjoy the work and favor the JAMstack ecosystem. I currently work at Ocupop."
+  "I am a mid-level Frontend Engineer living in North Carolina. I enjoy the work and favor the JAMstack ecosystem. I currently work at Ocupop."
 
 export const filmBio =
   "I also have an MFA in Creative Producing from UNCSA. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content while providing a safe and nurturing environment for film creatives."

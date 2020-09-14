@@ -56,7 +56,7 @@ const FrontEnd = () => {
             <section className="about">
               <h6 className="header">About Me</h6>
               <p>
-                I am a {frontend} Engineer living in the great state of North
+                I am a mid-level {frontend} Engineer living in the great state of North
                 Carolina. With 9 years of related work experience, I am capable
                 of collaboration across a variety of skill sets and
                 personalities. I work from home in an office that I built, with
