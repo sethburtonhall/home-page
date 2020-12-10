@@ -77,7 +77,10 @@ const IndexPage = ({ data }) => {
               <Text is="h1">Seth Hall</Text>
               <div className="toggle-content toggle-header">
                 <Text is="h3" className="code-content">
-                  {frontend} Engineer
+                  {frontend} Engineer{" "}
+                  <span style={{ fontSize: "13px", fontStyle: "italic" }}>
+                    (working towards full stack)
+                  </span>
                 </Text>
                 <Text is="h3" className="film-content">
                   Creative Producer
