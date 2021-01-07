@@ -14,7 +14,6 @@ import avatar from "../images/seth-code.jpg"
 import { GlobalStyle, StyledFooter, StyledResume } from "../design-system"
 
 const FrontEnd = () => {
-
   return (
     <>
       <GlobalStyle />
@@ -27,8 +26,9 @@ const FrontEnd = () => {
           </Helmet>
           <article className="resume">
             <section className="name">
-              <h1>
-                Seth Hall
+              <h1>Seth Hall</h1>
+              <h2 className="title">
+                {frontend}/Full Stack Engineer
                 <a
                   href="https://github.com/sethburtonhall"
                   target="_blank"
@@ -36,15 +36,6 @@ const FrontEnd = () => {
                   className="github"
                 >
                   <i className="fab fa-github"></i>
-                </a>
-              </h1>
-              <h2 className="title">
-                <a
-                  href="https://github.com/sethburtonhall"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {frontend} Engineer
                 </a>
               </h2>
             </section>
@@ -56,25 +47,19 @@ const FrontEnd = () => {
             <section className="about">
               <h6 className="header">About Me</h6>
               <p>
-                I am a mid-level {frontend} Engineer living in the great state of North
-                Carolina. With 9 years of related work experience, I am capable
-                of collaboration across a variety of skill sets and
-                personalities. I work from home in an office that I built, with
-                the help of family and friends, and it is the perfect
-                environment to learn, create, and ship. Every morning when I
-                walk into my office, I am reminded of how blessed I am to love
-                my work. I am most passionate about and interested in {""}
-                {frontend} Development, but each day I gain more knowledge in
-                full-stack technologies. Thanks to my tenacity, the web
-                community, and the internet, I have taught myself design and
-                development. If we work together and I don't know something, I
-                will say so and then I will learn whatever is needed for that
-                specific project. I am married and have an 9-year-old daughter
-                and a 6-year-old son, so it is important to balance my time
-                between work and family. I possess a strong passion and
-                dedication to creative craft and vocation and I am ready to work
-                on great products with an even greater team. (This could be
-                you!). Check out my{" "}
+                I am a {frontend} Engineer (working towards Full Stack), living
+                in the great state of North Carolina. With 10 years of
+                development experience, I am capable of collaborating across a
+                variety of skill sets and personalities. I have been working
+                remotely since 2006 and thanks to my tenacity, and the web
+                community, I have taught myself design and development. If we
+                work together and I don't know something, I will say so and then
+                I will learn whatever is needed for that specific project. I am
+                married and have an 9-year-old daughter and a 6-year-old son, so
+                it is important to balance my time between work and family. I
+                possess a strong passion and dedication to creative craft and
+                vocation and I am ready to work on great products with an even
+                greater team. (This could be you!). Check out my{" "}
                 <a
                   href="https://www.instagram.com/sethburtonhall/"
                   target="_blank"

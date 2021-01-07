@@ -190,7 +190,7 @@ export const StyledLayout = styled.div`
 
 // Content
 export const StyledContent = styled.div.attrs({
-  className: "styled-content"
+  className: "styled-content",
 })`
   min-height: 100%;
   display: grid;
@@ -233,8 +233,6 @@ export const StyledContent = styled.div.attrs({
   @media ${device.desktop} {
     width: 60%;
   }
-
-
 
   .header {
     grid-area: header;
@@ -382,8 +380,10 @@ export const StyledResume = styled.div`
     @media ${device.desktop} {
       grid-template-areas:
         "name photo"
-        "about work"
-        "skills education"
+        "about about"
+        "work work"
+        "skills skills"
+        "education education"
         "projects projects";
     }
 
@@ -425,6 +425,11 @@ export const StyledResume = styled.div`
   .photo {
     grid-area: photo;
     text-align: center;
+
+    @media ${device.laptop} {
+      text-align: right;
+      padding-right: 10px;
+    }
 
     img {
       width: 90px;

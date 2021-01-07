@@ -10,14 +10,14 @@ import ushdotcom from "../images/ushahidi-dotcom.png"
 export const frontend = "Frontend"
 
 export const codeBio =
-  "I am a mid-level Frontend Engineer living in the North Carolina mountains. I favor JAMstack and serverless environments. I am currently available for work. Feel free to reach out to discuss your project."
+  "I am a Frontend/Full Stack Engineer living in the North Carolina mountains. I favor JAMstack and serverless environments. I am currently available for work. Feel free to reach out to discuss your project."
 
 export const filmBio =
   "I also have an MFA in Creative Producing from UNCSA. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content while providing a safe and nurturing environment for film creatives."
 
 export const jobs = [
   {
-    title: `${frontend} Developer`,
+    title: `${frontend} Engineer`,
     company: "SoleLife, Inc",
     description: `SoleLife streams and automates your coaching business with tele-conferencing, chat, admin tasks, scheduling, billing, and more. As a member of the dev team, I worked on a React frontend and AWS serverless backend.`,
     date: "October 2020-December 2020",
@@ -54,18 +54,16 @@ export const jobs = [
 export const hardSkills = [
   "HTML/CSS/JS",
   "React/Redux",
-  "JAMstack",
-  "serverless stack",
   "Firebase/AWS",
+  "serverless stack",
+  "JAMstack",
   "headless CMS",
-  "static site generators (Gatsby, Jekyll)",
+  "static site generators (Next, Gatsby, Jekyll)",
   "DatoCMS, CraftCMS, CloudCannon",
   "styled components, styled system, Sass, PostCSS, etc...",
-  `${frontend} build tools (Grunt, Gulp)`,
-  "package managers (NPM, Yarn)",
   "html templating (Handlebars, Twig, etc...)",
-  "CSS frameworks (Material UI, Bootstrap, Foundation, etc...)",
-  "git version control (Github)",
+  "CSS frameworks (Material UI, Bootstrap, Chakra UI, Foundation, etc...)",
+  "git version control (Github, BitBucket)",
   "responsive design",
   "web performance and accessibility",
   "terminal/command line",
