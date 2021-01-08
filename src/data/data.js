@@ -13,7 +13,7 @@ export const codeBio =
   "I am a Frontend/Full Stack Engineer living in the North Carolina mountains. I favor JAMstack and serverless environments. I am currently available for work. Feel free to reach out to discuss your project."
 
 export const filmBio =
-  "I also have an MFA in Creative Producing from UNCSA. Hall Pictures is my Greensboro, NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content while providing a safe and nurturing environment for film creatives."
+  "I also have an MFA in Creative Producing from UNCSA. Hall Pictures is my NC based film company that specializes in the development and production of shorts, features, and series. We are truly independent, doing our best to develop great stories and produce high-quality content while providing a safe and nurturing environment for film creatives."
 
 export const jobs = [
   {
