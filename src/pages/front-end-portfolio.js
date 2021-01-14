@@ -19,7 +19,7 @@ const FrontEnd = () => {
       <GlobalStyle />
       <StyledResume>
         <Layout>
-          <SEO title="Seth Hall" description="Frontend Engineer" />
+          <SEO title="Seth Hall" description="Full Stack Web Developer" />
           <Helmet>
             <body className="code" />
             <title>Code</title>
@@ -28,7 +28,7 @@ const FrontEnd = () => {
             <section className="name">
               <h1>Seth Hall</h1>
               <h2 className="title">
-                {frontend}/Full Stack Engineer
+                {frontend}/Full Stack Web Developer
                 <a
                   href="https://github.com/sethburtonhall"
                   target="_blank"
@@ -47,8 +47,8 @@ const FrontEnd = () => {
             <section className="about">
               <h6 className="header">About Me</h6>
               <p>
-                I am a {frontend} Engineer (working towards Full Stack), living
-                in the great state of North Carolina. With 10 years of
+                I am a {frontend} Web Developer (working towards Full Stack),
+                living in the great state of North Carolina. With 10 years of
                 development experience, I am capable of collaborating across a
                 variety of skill sets and personalities. I have been working
                 remotely since 2006 and thanks to my tenacity, and the web
