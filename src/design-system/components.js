@@ -239,7 +239,7 @@ export const StyledContent = styled.div.attrs({
     width: 150px;
     align-self: start;
 
-    @media ${device.tabletUp} {
+    @media ${device.laptop} {
       justify-self: right;
     }
   }

@@ -77,18 +77,39 @@ const IndexPage = ({ data }) => {
               <Text is="h1">Seth Hall</Text>
               <div className="toggle-content toggle-header">
                 <Text is="h3" className="code-content">
-                  {frontend} Web Developer{" "}
-                  <span style={{ fontSize: "13px", fontStyle: "italic" }}>
-                    (working towards full stack)
-                  </span>
+                  Web Developer{" "}
                 </Text>
                 <Text is="h3" className="film-content">
                   Creative Producer
                 </Text>
               </div>
               <p className="toggle-content toggle-intro">
-                <span className="code-content">{codeBio}</span>
-                <span className="film-content">{filmBio}</span>
+                <span className="code-content">
+                  {codeBio}{" "}
+                  <Link
+                    to="/front-end-portfolio"
+                    style={{
+                      borderBottom: "1px solid white",
+                      paddingBottom: "1px",
+                    }}
+                  >
+                    View Portfolio.
+                  </Link>
+                </span>
+                <span className="film-content">
+                  {filmBio}{" "}
+                  <a
+                    href="https://hallpictures.us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      borderBottom: "1px solid white",
+                      paddingBottom: "1px",
+                    }}
+                  >
+                    Visit Site.
+                  </a>
+                </span>
               </p>
             </section>
             <section className="footer">
@@ -96,12 +117,12 @@ const IndexPage = ({ data }) => {
                 <div className="links">
                   <div className="toggle-content">
                     <div className="code-content">
-                      <button>
-                        <Link to="/front-end-portfolio">View Portfolio</Link>
-                      </button>
+                      {/* <button>
+                        <Link to="/front-end-portfolio">Portfolio</Link>
+                      </button> */}
                     </div>
                     <div className="film-content">
-                      <button bg="black" color="white">
+                      {/* <button bg="black" color="white">
                         <a
                           href="https://hallpictures.us"
                           target="_blank"
@@ -109,7 +130,7 @@ const IndexPage = ({ data }) => {
                         >
                           Visit Site
                         </a>
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                 </div>

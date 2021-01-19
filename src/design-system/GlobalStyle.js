@@ -23,13 +23,13 @@ export const GlobalStyle = createGlobalStyle`
           grid-template-rows: 200px 250px;
         } */
 
-        .content-footer {
+        /* .content-footer {
           justify-content: center;
 
           @media ${device.laptop} {
             justify-content: space-between;
           }
-        }
+        } */
 
         /* .film-content {
           height: 0;
