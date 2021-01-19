@@ -86,14 +86,8 @@ const IndexPage = ({ data }) => {
               <p className="toggle-content toggle-intro">
                 <span className="code-content">
                   {codeBio}{" "}
-                  <Link
-                    to="/front-end-portfolio"
-                    style={{
-                      borderBottom: "1px solid white",
-                      paddingBottom: "1px",
-                    }}
-                  >
-                    View Portfolio.
+                  <Link to="/front-end-portfolio" className="link">
+                    Click&nbsp;to&nbsp;view&nbsp;portfolio.
                   </Link>
                 </span>
                 <span className="film-content">
@@ -102,12 +96,9 @@ const IndexPage = ({ data }) => {
                     href="https://hallpictures.us"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{
-                      borderBottom: "1px solid white",
-                      paddingBottom: "1px",
-                    }}
+                    className="link"
                   >
-                    Visit Site.
+                    Click&nbsp;to&nbsp;visit&nbsp;site.
                   </a>
                 </span>
               </p>

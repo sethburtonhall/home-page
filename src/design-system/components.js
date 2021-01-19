@@ -277,6 +277,16 @@ export const StyledContent = styled.div.attrs({
       text-align: justify;
       margin: 0;
     }
+
+    .link {
+      background-color: #ae2676;
+      font-weight: normal;
+      padding: 1px 10px;
+      &:hover {
+        color: white;
+        border-bottom: 1px dotted white;
+      }
+    }
   }
 
   .footer {
