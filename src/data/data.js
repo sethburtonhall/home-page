@@ -164,7 +164,7 @@ export const socialNetworks = [
     url: "https://twitter.com/sethburtonhall",
     filmUrl: "https://twitter.com/sethburtonhall",
     faClass: "fab fa-twitter",
-    codeContentOnly: false,
+    codeContentOnly: true,
   },
   {
     url: "https://www.instagram.com/sethburtonhall/",
