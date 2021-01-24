@@ -45,8 +45,8 @@ export const StyledLayout = styled.div`
     }
 
     &.toggle-avatar {
-      height: 250px;
-      width: 250px;
+      height: 180px;
+      width: 180px;
     }
 
     .code-content,
@@ -195,7 +195,7 @@ export const StyledContent = styled.div.attrs({
   min-height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 260px 400px;
+  grid-template-rows: 100px 180px 400px;
   grid-gap: 0px;
   grid-template-areas:
     "header"
@@ -254,7 +254,7 @@ export const StyledContent = styled.div.attrs({
 
     .image {
       border-radius: 150px;
-      width: 250px;
+      width: 180px;
       max-width: 300px;
       border: 3px solid ${theme.white};
     }

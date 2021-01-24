@@ -131,7 +131,7 @@ const IndexPage = ({ data }) => {
                       href={bodyClass ? `${social.filmUrl}` : `${social.url}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={social.codeContent ? "code-content" : ""}
+                      className={social.codeContentOnly ? "code-content" : ""}
                     >
                       <div className="fa-stack fa-1x">
                         <i class="fas fa-circle fa-stack-2x"></i>

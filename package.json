@@ -30,7 +30,8 @@
     "system-components": "^3.0.3",
     "typography": "^0.16.19",
     "typography-theme-funston": "^0.16.19",
-    "typography-theme-lawton": "^0.16.19"
+    "typography-theme-lawton": "^0.16.19",
+    "use-sound": "^2.0.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
