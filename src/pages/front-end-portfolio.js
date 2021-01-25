@@ -114,18 +114,13 @@ const FrontEnd = () => {
               <h6 className="header">Education</h6>
               <div className="school">
                 <h4 className="degree">BA - Mass Communications</h4>
-                <h5 className="school-name">
-                  North Carolina State University
-                  <span> | 1995-1998</span>
-                </h5>
+                <h5 className="school-name">North Carolina State University</h5>
               </div>
               <div className="school">
                 <h4 className="degree">
                   MFA - Creative Producing - School of Film
                 </h4>
-                <h5 className="school-name">
-                  UNCSA<span> | 2016-2018</span>
-                </h5>
+                <h5 className="school-name">UNCSA</h5>
               </div>
               <div className="school">
                 <h4 className="degree">Certified ScrumMaster®</h4>
